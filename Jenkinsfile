@@ -1,5 +1,5 @@
 node {
-  def myFradleContainer = docker.image ('gradle:jdk8-alpine')
+  def myGradleContainer = docker.image('gradle:jdk8-alpine')
   myGradleContainer.pull()
   stage('prep') {
     checkout scm
